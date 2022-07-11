@@ -25,8 +25,8 @@ data.table::setDT(df)
 df <- df %>%
         distinct() %>%
         mutate(across(c(measles, rubella),
-                      function(x) case_when(x %in% c('negatif', '1') ~ FALSE,
-                                            x %in% c('positif', '2') ~ TRUE,
+                      function(x) case_when(x %in% c('negatif', '2') ~ FALSE,
+                                            x %in% c('positif', '1') ~ TRUE,
                                             TRUE ~ NA))) %>%
         mutate(diag = case_when(measles & rubella ~ 'Both',
                                 measles ~ 'Measles',
