@@ -1,5 +1,5 @@
 # --------------------------------------------------------------------------------------------------
-# proportion of confirmed measles
+# proportion of confirmed measles (WARNING : QUICK AND DIRTY)
 #
 # author : catherine eisenhauer
 # date : july 2022
